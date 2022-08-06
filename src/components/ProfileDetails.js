@@ -93,7 +93,6 @@ const ProfileDetails = () => {
         },
       });
       const data = await req.json();
-      console.log(data);
       if (data.status === 200) {
         setUserData(data.userData);
         setUsername(data.userData.userName);
@@ -119,7 +118,9 @@ const ProfileDetails = () => {
     getUser();
     const endpoint = `${window.location.href}/share`;
     let originForShare = new URL(endpoint);
-    originForShare.searchParams.set("user", username);
+    var userName2 = localStorage.getItem("username");
+    originForShare.searchParams.set("user", userName2);
+
     setOrigin(originForShare.href);
   }, [roneId]);
 
