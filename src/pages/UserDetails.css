@@ -1,0 +1,212 @@
+.userDetails {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.header__userDetails {
+  height: 90px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  background-color: #fff;
+  border-bottom: 1px solid #feefef;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+.title__container__userDetails {
+  margin-top: 110px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title__container__userDetails > h2 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.userDetailsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 8vw;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.userImage__container__userDetails {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.userImage {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #d52a33;
+}
+
+.loader__container {
+  display: none;
+}
+
+.choosePhoto__Button__userDetails {
+  height: 35px;
+  width: 160px;
+  background-color: #d52a33;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.choosePhoto__Button__userDetails > input {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: 0;
+  margin-left: -15px;
+}
+
+.choosePhoto__Button__userDetails > img {
+  height: 15px;
+  object-fit: contain;
+  margin-right: 10px;
+  margin-left: -145px;
+}
+
+.choosePhoto__Button__userDetails > input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.form {
+  margin-top: 20px;
+  width: 350px;
+}
+
+.input__container {
+  border: 1px solid #7b96a1;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.input__container > legend {
+  font-size: 13px;
+  color: #5b5b5b;
+  padding: 0px 5px;
+  margin-left: 13px;
+  margin-bottom: -10px;
+  position: relative;
+}
+
+.input__box {
+  width: 100%;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -1000;
+}
+
+.input__box > input {
+  width: 90%;
+  height: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: 13px;
+}
+
+.location__input__box {
+  width: 100%;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -1000;
+}
+
+.location__input__box > input {
+  width: 80%;
+  height: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: 13px;
+}
+
+.location__input__box > img {
+  margin-left: 10px;
+  cursor: pointer;
+  height: 20px;
+  object-fit: contain;
+}
+
+.input__box__textArea {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -1000;
+}
+
+.input__box__textArea > textarea {
+  width: 90%;
+  height: 75%;
+  background: none;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: 13px;
+  resize: none;
+}
+
+.saveProfileButton {
+  height: 40px;
+  width: calc(100% - 2px);
+  background-color: #d52a33;
+  border: 2px solid #d52a33;
+  border-radius: 5px;
+  color: white;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  letter-spacing: 1px;
+  font-family: inherit;
+}
+
+.saveProfileButton:hover {
+  background-color: #ed2d37;
+}
+
+@media only screen and (max-width: 500px) {
+  .title__container__userDetails > h2 {
+    font-size: 20px;
+  }
+}

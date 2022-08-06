@@ -1,0 +1,29 @@
+.contentContainer {
+    margin: 100px 8vw;
+}
+
+.contentContainer > h5 {
+    margin-top: 20px;
+}
+
+.contentContainer > p {
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.contentContainer > p > a {
+    color: #0000EE;
+}
+
+.aboutContainer > h2 {
+    margin-bottom: 20px;
+}
+
+.aboutContainer > h3 {
+    margin-top: 20px;
+}
+
+.aboutContainer > p {
+    margin-top: 10px;
+    font-size: 13px;
+}

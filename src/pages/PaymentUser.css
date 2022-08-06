@@ -1,0 +1,52 @@
+.container__paymnetUser {
+  width: 100vw;
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.container__paymnetUser_buyRoneCrd {
+  width: 100vw;
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container__paymnetUser > h2 {
+  margin-bottom: 30px;
+}
+
+.loader__container__cod {
+  display: none;
+}
+
+.loader__container__paymnetUser {
+  margin-top: 80px;
+  width: 100vw;
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 500px) {
+  .container__paymnetUser > h2 {
+    margin-bottom: 30px;
+    margin-top: 50px;
+  }
+
+  .container__paymnetUser {
+    justify-content: flex-start;
+  }
+
+  .popupContainer {
+    margin-left: 150px;
+    margin-top: 0px;
+  }
+}

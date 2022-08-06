@@ -1,0 +1,22 @@
+.adContainer {
+  padding: 0px 8vw;
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 70px;
+}
+
+.adCard {
+  height: 100%;
+  width: 49.5%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media only screen and (max-width: 500px) {
+  .adContainer {
+    height: 420px;
+  }
+}

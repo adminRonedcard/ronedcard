@@ -1,0 +1,28 @@
+.primaryButton {
+  background-color: #d52a33;
+  border: 2px solid #d52a33;
+  height: 35px;
+  width: 100px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.secondaryButton {
+  border: 2px solid #d52a33;
+  height: 35px;
+  width: 130px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d52a33;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+}

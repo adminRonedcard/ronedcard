@@ -1,0 +1,548 @@
+.walletContent__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+.roneCard__container {
+  margin-top: 20px;
+  width: 100%;
+  height: 260px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+}
+
+.loader__container__card {
+  margin-left: 100px;
+  margin-top: 30px;
+}
+
+.leftContaniner__roneCard {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  margin-top: 25px;
+}
+
+.leftContaniner__roneCard > img {
+  height: 45px;
+  object-fit: contain;
+  margin-left: -100px;
+}
+
+.bottomContainer__leftContainer__roneCard {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 50px;
+}
+
+.cardHolder {
+  color: #ffffff;
+}
+
+.cardHolder > h5 {
+  font-weight: normal;
+  font-size: 15px;
+}
+
+.cardHolder > p {
+  color: #fbe9e9;
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+.cardBalanceContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardBalanceContainer > p {
+  font-size: 10px;
+  color: #ffffff;
+}
+
+.cardBalanceContainer > h3 {
+  color: #ffcbce;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+
+#transactionLinkCardNotFound {
+  display: none;
+}
+
+#linkNotCreated {
+  margin-left: 30px;
+  color: #d52a33;
+}
+
+.roneCard__container > p {
+  transform: rotate(-90deg);
+  margin-right: -130px;
+  color: #ffffff;
+  font-size: 13px;
+  letter-spacing: 7px;
+  margin-bottom: 40px;
+}
+
+.buyMoretext {
+  color: #686868;
+  margin-top: -15px;
+}
+
+.buyMoreCards__button {
+  height: 40px;
+  width: 200px;
+  background-color: #f48d43;
+  border-radius: 50px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.cardCountContainer {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.cardCountContainer > h3 {
+  margin-top: 20px;
+  color: #686868;
+}
+
+.inputContainerbuyMoreCard > p {
+  font-size: 11px;
+  color: #686868;
+  margin-bottom: 5px;
+}
+
+.priceCountContainer,
+.totalCountContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.priceCountContainer > h2,
+.totalCountContainer > h2 {
+  margin-top: 8px;
+  color: #d52a33;
+}
+
+.priceCountContainer > p,
+.totalCountContainer > p {
+  font-size: 11px;
+  color: #686868;
+}
+
+.inputBuyMoreCard {
+  width: 120px;
+  height: 40px;
+  border: 1px solid #d52a33;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputBuyMoreCard > input {
+  width: 70%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 15px;
+  font-family: inherit;
+  color: #686868;
+}
+
+.counterContainer__card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.counterContainer__card > img {
+  height: 20px;
+  object-fit: contain;
+}
+
+.buyMoreCardsContainer {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.TransactionContainerTitle {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 55px;
+  margin-bottom: 30px;
+}
+
+.TransactionContainerTitle > span {
+  width: 80%;
+  height: 1px;
+  background-color: #fbe9e9;
+}
+
+.TransactionLinks {
+  height: 30px;
+  width: 140px;
+  background-color: #feefef;
+  border-radius: 30px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d52a33;
+  margin-top: -15px;
+}
+
+.buyRoneCardButton {
+  margin-top: 20px;
+}
+
+.transactionLinks__containerMount {
+  width: 100%;
+}
+
+.transactionLinks__container {
+  width: 100%;
+}
+
+.TransactionLink__card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #feefef;
+  height: 50px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.card__transactionHistory {
+  justify-content: center;
+}
+
+.card__transactionHistory > h4 {
+  color: #686868;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.left__card__transaction > p {
+  font-size: 13px;
+  margin-left: 10px;
+  color: #686868;
+}
+
+.left__card__transaction > p > span {
+  margin-left: 10px;
+}
+
+.middleLeft__card__transaction > p {
+  font-size: 13px;
+  color: #686868;
+}
+
+.middleRight__card__transaction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.middleRight__card__transaction > img {
+  height: 20px;
+  object-fit: contain;
+}
+
+.sendButton {
+  padding: 5px 10px;
+  background-color: #00ad07;
+  color: #ffffff;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  margin-right: 20px;
+}
+
+.loader__container__widget {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  display: none;
+}
+
+.generateNewLink__button {
+  height: 40px;
+  width: 150px;
+  background-color: #d52a33;
+  border-radius: 50px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.transactionHistoryContainer {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.titltTransactionHistoryContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.titltTransactionHistoryContainer > p {
+  color: #d52a33;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.dateTitle {
+  margin-left: 20px;
+}
+
+.statusTitle {
+  margin-right: 20px;
+}
+
+.dateTransactionHistory {
+  margin-left: 20px;
+  color: #686868;
+  font-size: 13px;
+}
+
+.typetransactionHistory {
+  color: #686868;
+  font-size: 13px;
+  margin-right: 20px;
+}
+
+.statusTransactionHistory {
+  margin-right: 20px;
+  color: #020202;
+  font-size: 13px;
+}
+
+.footerContainerWallet {
+  position: relative;
+  bottom: 0;
+  box-shadow: 0 1px 30px 0 #0000001a;
+}
+
+.formForGenerateLink {
+  width: 100%;
+  margin-top: 20px;
+  display: none;
+}
+
+.errorName,
+.errorMobile {
+  font-size: 12px;
+  color: #686868;
+  display: none;
+  margin-left: 20px;
+}
+
+.submitButtonGenerateLink {
+  height: 50px;
+  width: calc(100% - 2px);
+  background-color: #d52a33;
+  border-radius: 30px;
+  color: white;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  letter-spacing: 1px;
+  font-family: inherit;
+  margin-bottom: 20px;
+}
+
+.expiredButton {
+  font-size: 12px;
+  color: #686868;
+  margin-right: 20px;
+}
+
+@media only screen and (max-width: 414px) {
+  .footerContainerWallet {
+    margin-top: 400px;
+  }
+  .roneCard__container {
+    height: 220px;
+    display: flex;
+  }
+  .leftContaniner__roneCard {
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  .leftContaniner__roneCard > img {
+    height: 40px;
+    margin-left: -90px;
+  }
+  .bottomContainer__leftContainer__roneCard {
+    margin-top: 30px;
+    width: 250px;
+  }
+  .cardBalanceContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .cardBalanceContainer > h3 {
+    font-size: 15px;
+  }
+  .roneCard__container > p {
+    margin-right: -120px;
+    font-size: 12px;
+  }
+  .buyMoretext {
+    font-size: 15px;
+  }
+  .left__card__transaction > p {
+    font-size: 12px;
+    width: 80px;
+  }
+  .left__card__transaction > p > span {
+    margin-left: 0px;
+  }
+  .middleLeft__card__transaction > p {
+    font-size: 12px;
+    width: 110px;
+  }
+  .middleRight__card__transaction > img {
+    height: 15px;
+  }
+  .middleRight__card__transaction > p {
+    font-size: 11px;
+    margin-left: 3px;
+    width: 30px;
+    margin-right: 20px;
+  }
+  .deleteButton__transaction__card {
+    height: 25px;
+    width: 60px;
+    font-size: 11px;
+  }
+  .generateNewLink__button {
+    height: 40px;
+    width: 150px;
+    background-color: #d52a33;
+    border-radius: 50px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .footerContainerWallet {
+    margin-top: 500px;
+  }
+  .roneCard__container {
+    height: 190px;
+    display: flex;
+  }
+  .leftContaniner__roneCard {
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  .leftContaniner__roneCard > img {
+    height: 35px;
+    margin-left: -100px;
+  }
+  .bottomContainer__leftContainer__roneCard {
+    margin-top: 30px;
+  }
+  .bottomContainer__leftContainer__roneCard > h5 {
+    margin-left: 10px;
+  }
+  .cardHolder > h5 {
+    font-size: 13px;
+  }
+  .cardHolder > p {
+    font-size: 12px;
+  }
+  .cardBalanceContainer {
+    margin-left: 90px;
+    display: flex;
+    flex-direction: column;
+  }
+  .roneCard__container > p {
+    margin-right: -120px;
+    font-size: 7px;
+    margin-top: -40px;
+  }
+  .buyMoretext {
+    font-size: 15px;
+  }
+  .left__card__transaction > p {
+    font-size: 12px;
+    width: 70px;
+  }
+  .left__card__transaction > p > span {
+    margin-left: 0px;
+  }
+  .middleLeft__card__transaction > p {
+    font-size: 12px;
+    width: 110px;
+  }
+  .middleRight__card__transaction > img {
+    height: 13px;
+  }
+  .middleRight__card__transaction > p {
+    font-size: 11px;
+    margin-left: 3px;
+    width: 35px;
+    margin-right: 20px;
+  }
+  .deleteButton__transaction__card {
+    font-size: 10px;
+  }
+  .typetransactionHistory,
+  .dateTransactionHistory,
+  .statusTransactionHistory {
+    font-size: 12px;
+  }
+}

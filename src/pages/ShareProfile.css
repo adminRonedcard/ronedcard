@@ -1,0 +1,78 @@
+.profileDetailsShare {
+  margin-top: 80px;
+  height: calc(100vh - 80px);
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+}
+
+.popupContainer {
+  height: 360px;
+  background-color: white;
+  width: 300px;
+  margin-bottom: -150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.qrImageContainer_upi > img {
+  border: 1px solid #0000001a;
+  margin-top: 30px;
+  width: 200px;
+  height: 200px;
+}
+
+.upiContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.upiContent > h5 {
+  font-size: 20px;
+}
+
+.copyUpiButton {
+  margin-top: 10px;
+  height: 20px;
+  width: 100px;
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyUpiButton > img {
+  height: 15px;
+  object-fit: contain;
+}
+
+.copyUpiButton > p {
+  font-size: 12px;
+  font-family: inherit;
+  margin-left: 3px;
+}
+.dowload_qr_upi {
+  margin-top: 10px;
+  background-color: #d52a33;
+  height: 25px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: normal;
+  color: #ffffff;
+}
