@@ -108,6 +108,9 @@ function UserDetails() {
     setBio(document.getElementById("bio").value);
     setProfession(document.getElementById("profession").value);
     setPinCode(document.getElementById("pincode").value);
+    setCountry(document.getElementById("country").value);
+    setState(document.getElementById("state").value);
+    setDistrict(document.getElementById("city").value);
   };
 
   const storeLocation = () => {
@@ -205,9 +208,9 @@ function UserDetails() {
       profession === "" ||
       bio === "" ||
       country === "" ||
-      country === undefined ||
-      state === undefined ||
-      district === undefined ||
+      country === "" ||
+      state === "" ||
+      district === "" ||
       state === "" ||
       district === "" ||
       pincode === ""
@@ -312,6 +315,7 @@ function UserDetails() {
                 type="text"
                 name="profession"
                 onChange={storeValues}
+                maxLength={10}
               />
             </div>
           </fieldset>
@@ -346,9 +350,8 @@ function UserDetails() {
               <input
                 id="country"
                 type="text"
-                value={country !== "" ? country : ""}
                 name="country"
-                readOnly
+                onChange={storeValues}
               />
             </div>
           </fieldset>
@@ -357,23 +360,16 @@ function UserDetails() {
             <div className="input__box">
               <input
                 id="state"
-                value={state !== "" ? state : ""}
                 type="text"
                 name="state"
-                readOnly
+                onChange={storeValues}
               />
             </div>
           </fieldset>
           <fieldset className="input__container">
             <legend>City*</legend>
             <div className="input__box">
-              <input
-                id="city"
-                value={district !== "" ? district : ""}
-                type="text"
-                name="city"
-                readOnly
-              />
+              <input id="city" type="text" name="city" onChange={storeValues} />
             </div>
           </fieldset>
           <fieldset className="input__container">

@@ -225,13 +225,23 @@ const CreateUser = () => {
             <fieldset className="input__container">
               <legend>Name*</legend>
               <div className="input__box">
-                <input onChange={storeValues} id="name" type="text" />
+                <input
+                  maxLength="10"
+                  onChange={storeValues}
+                  id="name"
+                  type="text"
+                />
               </div>
             </fieldset>
             <fieldset className="input__container">
               <legend>Username*</legend>
               <div className="input__box">
-                <input onChange={storeValues} id="username" type="text" />
+                <input
+                  maxLength="8"
+                  onChange={storeValues}
+                  id="username"
+                  type="text"
+                />
               </div>
             </fieldset>
             <div id="errorContainer" className="errorContainer">
