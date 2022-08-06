@@ -83,7 +83,7 @@ const ProfileDetails = () => {
         "https://ronenestjs.herokuapp.com/profile/getuser_data"
       );
       url.search = new URLSearchParams({
-        id: roneId,
+        id: rone_id,
       });
       const req = await fetch(url, {
         method: "GET",

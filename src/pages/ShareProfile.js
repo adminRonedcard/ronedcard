@@ -78,14 +78,15 @@ const ShareProfile = () => {
       url.search = new URLSearchParams({
         username: username,
       });
+      console.log(url);
       const req = await fetch(url, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
       });
       const data = await req.json();
+      console.log(data);
       if (data) {
         setUserData(data.userData);
         setUserId(data.userData._id);
@@ -106,12 +107,12 @@ const ShareProfile = () => {
   useEffect(() => {
     async function getAllImages() {
       const endpoint =
-        "https://ronenestjs.herokuapp.com/image_Gallery/get_images";
+        "https://ronenestjs.herokuapp.com/image_Gallery/share_imageGallery";
       let url = new URL(endpoint);
       url.search = new URLSearchParams({
         user_id: userid,
       });
-
+      console.log(url);
       const config = {
         headers: {
           "content-type": "application/json",
@@ -123,6 +124,7 @@ const ShareProfile = () => {
         .get(url, config)
         .then((res) => {
           const data = res.data;
+          console.log(data);
           if (data.status === 404) {
             document.getElementById("imageGalleryContent").style.display =
               "none";
@@ -134,25 +136,26 @@ const ShareProfile = () => {
         })
         .catch(console.error);
     }
-
     if (userid !== "" && userid !== undefined) {
       getAllImages();
     }
-  }, [userid]);
+  }, [userid, username]);
 
   useEffect(() => {
     async function getAllProducts() {
-      const endpoint = "https://ronenestjs.herokuapp.com/products/all_products";
-
+      const endpoint = "https://ronenestjs.herokuapp.com/products/products_all";
+      let url = new URL(endpoint);
+      url.search = new URLSearchParams({
+        user_id: userid,
+      });
       const config = {
         headers: {
           "content-type": "application/json",
-          Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
       };
 
       await axios
-        .get(endpoint, config)
+        .get(url, config)
         .then((res) => {
           const data = res.data;
           if (data.status === 200) {
