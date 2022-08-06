@@ -153,7 +153,6 @@ const ShareProfile = () => {
           "content-type": "application/json",
         },
       };
-
       await axios
         .get(url, config)
         .then((res) => {
