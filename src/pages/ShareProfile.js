@@ -157,6 +157,7 @@ const ShareProfile = () => {
         .get(url, config)
         .then((res) => {
           const data = res.data;
+          console.log(data);
           if (data.status === 200) {
             setAllProducts(data.products_data);
           }
