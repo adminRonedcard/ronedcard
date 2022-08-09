@@ -266,7 +266,7 @@ const EditProfile = () => {
                 type="file"
                 name="file"
                 id="inpFile"
-                accept=".png"
+                accept="*"
                 onChange={fileChangedHandler}
               />
               <img src={camera} alt="" />

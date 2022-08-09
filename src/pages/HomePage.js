@@ -45,6 +45,13 @@ const HomePage = () => {
         "invalid rONE ID or Email";
       document.getElementById("loaderNextButton").style.display = "none";
       document.getElementById("nextText").style.display = "block";
+    } else if (data.status === 409) {
+      document.getElementById("nextText").style.display = "block";
+      document.getElementById("errorRoneId").style.display = "block";
+      document.getElementById("errorRoneId").innerHTML =
+        "Already Registered Please login";
+      document.getElementById("loaderNextButton").style.display = "none";
+      document.getElementById("nextText").style.display = "block";
     }
   }
   const nextClick = () => {

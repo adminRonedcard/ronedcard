@@ -154,6 +154,7 @@ function UserDetails() {
         }),
       });
       const data = await response.json();
+      console.log(data);
       if (data.status === 200) {
         document.getElementById("saveProfileLoader").style.display = "none";
         document.getElementById("saveProfileText").style.display = "block";
@@ -264,7 +265,7 @@ function UserDetails() {
               type="file"
               name="file"
               id="inpFile"
-              accept=".png"
+              accept="*"
               onChange={fileChangedHandler}
             />
             <img src={photoIcon} alt="" />
