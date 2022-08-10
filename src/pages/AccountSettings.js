@@ -35,7 +35,6 @@ const AccountSettings = () => {
           0,
           (uri) => {
             setImageFile(uri);
-            console.log(uri);
           },
           "base64",
           200,
@@ -102,7 +101,6 @@ const AccountSettings = () => {
         }),
       });
       const data = await response.json();
-      console.log();
       if (data.status === 200) {
         window.location.href = "/profile";
       }
