@@ -226,7 +226,7 @@ const CreateUser = () => {
               <legend>Name*</legend>
               <div className="input__box">
                 <input
-                  maxLength="12"
+                  maxLength="15"
                   onChange={storeValues}
                   id="name"
                   type="text"

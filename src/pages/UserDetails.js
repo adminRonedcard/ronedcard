@@ -316,7 +316,7 @@ function UserDetails() {
                 type="text"
                 name="profession"
                 onChange={storeValues}
-                maxLength={10}
+                maxLength={18}
               />
             </div>
           </fieldset>

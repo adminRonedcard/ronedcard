@@ -294,6 +294,7 @@ const EditProfile = () => {
                       id="profession"
                       type="text"
                       name="profession"
+                      maxLength="18"
                       defaultValue={profession}
                     />
                   </div>
