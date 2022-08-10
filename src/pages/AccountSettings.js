@@ -87,7 +87,7 @@ const AccountSettings = () => {
     document.getElementById("saveQRLoader").style.display = "block";
     document.getElementById("saveQrText").style.display = "none";
     if (upi !== "" && imageFile !== "") {
-      const endpoint = "http://localhost:5001/account/save_details";
+      const endpoint = "https://ronedcard.herokuapp.com/account/save_details";
       const response = await fetch(endpoint, {
         method: "PUT",
         headers: {
@@ -102,6 +102,7 @@ const AccountSettings = () => {
         }),
       });
       const data = await response.json();
+      console.log();
       if (data.status === 200) {
         window.location.href = "/profile";
       }
